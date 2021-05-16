@@ -1,7 +1,3 @@
-/* Heading          font-family: 'Poppins', sans-serif; */
-
-/* body             font-family: 'Open Sans', sans-serif; */
-
 /* Start Varibales */
 :root{
     --main-color: #19c8fa;
@@ -9,7 +5,6 @@
     --section-padding: 100px;
 }
 /* End Varibales */
-
 /* Start Global Ruls */
 html{scroll-behavior: smooth;}
 *{
@@ -20,7 +15,6 @@ html{scroll-behavior: smooth;}
     margin: 0;
 }
 /* End Global Ruls */
-
 body{
     font-family: 'Open Sans', sans-serif; 
 }
@@ -73,10 +67,36 @@ header .heading input[type="submit"]:hover{
 header .image img{
     width: 800px;
 }
+@media (max-width:375px){
+    header nav img{
+        width: 400px;
+    }
+    header nav input[type="submit"]{
+        width: 400px;
+        padding: 30px;
+        font-size: 40px;
+        border-radius: 100px;
+        box-shadow: 0 0 30px -20px black;
+    }
+    header .heading{
+        font-size: 50px;
+    }
+    header .heading p{
+        width: 1050px;
+        margin: 100px auto;
+    }
+    header .heading input[type="submit"]{
+        width: 700px;
+        padding: 60px;
+        border-radius: 100px;
+        font-size: 35px;
+        margin-bottom: 200px;
+    }
+    header .image img{
+        margin-bottom: 400px;
+    }
+}
 /************************ End Header ********************/
-
-
-
 
 /************************ Start formed ********************/
 .formed-up{
@@ -94,10 +114,24 @@ header .image img{
 .formed-up .messages span{
     margin: 25px;
 }
+@media (max-width:375px){
+    .formed-up{
+        display: grid;
+        width: 800px;
+        margin: 20px 250px;
+        font-size: 60px;
+    }
+    .formed-up .formed, .formed-up .messages{
+        margin: 100px auto;
+    }
+    .formed-up .formed img, .formed-up .messages img{
+        width: 200px;
+    }
+    .formed-up .formed h1, .formed-up .messages h1{
+        font-size: 300px;
+    }
+}
 /************************ End formed ********************/
-
-
-
 
 /************************ Start Grow ********************/
 .grow-up{
@@ -116,10 +150,26 @@ header .image img{
 .grow-up .image img{
     width: 550px;
 }
+@media (max-width:375px){
+    .grow-up{
+        gap: 200px;
+        display: grid;
+        margin-bottom: 500px;
+    }
+    .grow-up .grow{
+        order: 2;
+        width: 1100px;
+        font-size: 50px;
+        text-align: center;
+        margin: 20px 100px;
+    }
+    .grow-up .image img{
+        order: 1;
+        width: 1000px;
+        margin: 20px 150px;
+    }
+}
 /************************ End Grow ********************/
-
-
-
 
 /************************ Start Conversations  ********************/
 .conversations{
@@ -138,9 +188,24 @@ header .image img{
 .conversations .cont p{
     margin-top: 20px;
 }
+@media (max-width:375px){
+    .conversations{
+        gap: 200px;
+        display: grid;
+        margin-bottom: 500px;
+    }
+    .conversations .image img{
+        width: 1000px;
+        margin: 20px 150px;
+    }
+    .conversations .cont{
+        width: 1100px;
+        font-size: 48px;
+        text-align: center;
+        margin: 20px 100px;
+    }
+}
 /************************ End Conversations ********************/
-
-
 
 /************************ Start Users  ********************/
 .users-up{
@@ -159,9 +224,26 @@ header .image img{
 .users-up .image img{
     width: 550px;
 }
+@media (max-width:375px){
+    .users-up{
+        gap: 200px;
+        display: grid;
+        margin-bottom: 500px;
+    }
+    .users-up .cont{
+        order: 2;
+        width: 1100px;
+        font-size: 49px;
+        text-align: center;
+        margin: 20px 100px;
+    }
+    .users-up .image img{
+        order: 1;
+        width: 1000px;
+        margin: 20px 150px;
+    }
+}
 /************************ End Users ********************/
-
-
 
 /************************ Start Build  ********************/
 .build{
@@ -183,9 +265,22 @@ header .image img{
 .build input[type="submit"]:hover{
     cursor: pointer;
 }
+@media (max-width:375px){
+    .build{
+        width: 1100px;
+        font-size: 50px;
+        margin: 20px 100px;
+    }
+    .build input[type="submit"]{
+        width: 700px;
+        padding: 60px;
+        border-radius: 100px;
+        font-size: 35px;
+        margin-bottom: 500px;
+        margin-top: 100px;
+    }
+}
 /************************ End Build ********************/
-
-
 
 /************************ Start Footer  ********************/
 footer{
@@ -252,5 +347,66 @@ footer .right form input[type="submit"]{
 }
 footer .right form input[type="text"]:hover, footer .right form input[type="submit"]:hover{
     cursor: pointer;
+}
+@media (max-width:375px){
+    footer{
+        width: 1300px;
+        display: grid;
+    }
+    footer .foot{
+        display: grid;
+        font-size: 50px;
+    }
+    footer .left {
+        order: 2;
+        margin-top: 300px;
+    }
+    footer .left .logo img{
+        width: 600px;
+    }
+    footer .left >p{
+        width: 1100px;
+        margin-bottom: 150px;
+    }
+    footer .left .phone, footer .left .email{
+        margin-bottom: 50px;
+    }
+    footer .left .phone img, footer .left .email img{
+        width: 60px;
+    }
+    footer .left .phone p, footer .left .email p{
+        margin-left: 30px;
+        font-size: 55px;
+    }
+    footer .left .social{
+        gap: 60px;
+        margin-top: 200px;
+    }
+    footer .left .social img{
+        width: 80px;
+    }
+    footer .right p{
+        width: 1100px;
+        margin: 100px 0;
+    }
+    footer .right form{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    footer .right form input[type="text"]{
+        width: 100%;
+        padding: 50px;
+        margin-bottom: 30px;
+        font-size: 50px;
+        border-radius: 25px;
+    }
+    footer .right form input[type="submit"]{
+        width: 50%;
+        padding: 50px;
+        font-size: 50px;
+        border-radius: 25px;
+        font-weight: bold;
+    }
 }
 /************************ End Footer ********************/
